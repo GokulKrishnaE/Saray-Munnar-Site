@@ -351,6 +351,12 @@ new Swiper(".aboutSwiper", {
     pagination: {
       el: ".swiper-pagination",
     },
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
     on: {
       init: function () {
         // set first bg on init
