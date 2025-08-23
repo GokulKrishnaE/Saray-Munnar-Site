@@ -349,7 +349,8 @@ $(document).ajaxStop(function(){
  
 new Swiper(".aboutSwiper", {
     pagination: {
-      el: ".swiper-pagination",
+      el: ".my-swiper-pagination",
+      clickable: true,
     },
     speed: 400,
     loop: true,
@@ -370,6 +371,11 @@ new Swiper(".aboutSwiper", {
       }
     }
   });
+
+  document.querySelectorAll('.fadeImageWrap').forEach(el => {
+  const color = el.dataset.fadeColor || '#000';
+  el.style.setProperty('--fade-color', color);
+});
 
 
 
