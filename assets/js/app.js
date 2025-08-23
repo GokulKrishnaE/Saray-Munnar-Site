@@ -358,18 +358,18 @@ new Swiper(".aboutSwiper", {
       delay: 5000,
       disableOnInteraction: false
     },
-    on: {
-      init: function () {
-        // set first bg on init
-        const firstBg = this.slides[this.activeIndex].dataset.bg;
-        document.querySelector(".bgImage").src = firstBg;
-      },
-      slideChange: function () {
-        // set bg when slide changes
-        const newBg = this.slides[this.activeIndex].dataset.bg;
-        document.querySelector(".bgImage").src = newBg;
-      }
-    }
+    // on: {
+    //   init: function () {
+    //     // set first bg on init
+    //     const firstBg = this.slides[this.activeIndex].dataset.bg;
+    //     document.querySelector(".bgImage").src = firstBg;
+    //   },
+    //   slideChange: function () {
+    //     // set bg when slide changes
+    //     const newBg = this.slides[this.activeIndex].dataset.bg;
+    //     document.querySelector(".bgImage").src = newBg;
+    //   }
+    // }
   });
 
   document.querySelectorAll('.fadeImageWrap').forEach(el => {
@@ -377,6 +377,20 @@ new Swiper(".aboutSwiper", {
   el.style.setProperty('--fade-color', color);
 });
 
+
+const scrollBtn = $('#scrollTopButton');
+    scrollBtn.hide();
+
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > $(window).height()) {
+    scrollBtn.fadeIn();
+    } else {
+    scrollBtn.fadeOut();
+    }
+});
+    $('#scrollTopButton').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 600); // 600ms animation duration
+});
 
 
   $(window).scroll(function () {
