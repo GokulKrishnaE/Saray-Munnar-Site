@@ -323,6 +323,19 @@ $(document).ajaxStop(function(){
   $('.card-content .card-top').matchHeight()
   $('[data-bs-toggle="tooltip"]').tooltip()
 
+  $("#openFixedFormBtn").click(function(){
+    $(".enquiryButtonFixed").fadeOut(200, function(){
+      $(".enquiryFormFixed").addClass('visible');
+    });
+  });
+
+  $("#closeFixedForm").on("click", function(){
+    $(".enquiryFormFixed").removeClass("visible");
+    setTimeout(function(){
+      $(".enquiryButtonFixed").fadeIn(200);
+    }, 400); // match transition duration
+  });
+
   $('.datepicker').daterangepicker({
   singleDatePicker: true,
   autoApply: true,
