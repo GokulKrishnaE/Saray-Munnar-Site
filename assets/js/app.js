@@ -384,6 +384,22 @@ new Swiper(".aboutSwiper", {
     //   }
     // }
   });
+new Swiper(".roomPhotosSwiper", {
+    pagination: {
+      el: ".my-swiper-pagination",
+      clickable: true,
+    },
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+     navigation: {
+      nextEl: ".roomPhotoSliderNext",
+      prevEl: ".roomPhotoSliderPrev",
+    },
+  });
 
   document.querySelectorAll('.fadeImageWrap').forEach(el => {
   const color = el.dataset.fadeColor || '#000';

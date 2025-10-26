@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saray Munnar</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="wrapper subPage">
+    <header data-include="header"></header>
+    <main>
+        <div class="hero-banner bannerSec subPageBannerSec">
+            <div>
+                <header data-include="header"></header>
+                <div class="subPageBanner">
+                    <img src="./assets/images/DSC09635-HDR.png"
+                        class="img-fluid" alt>
+                    <h1>Book Your Rooms</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h1 class="sub-title-2 mb-4">Choose your rooms</h1>
+                <div class="row mt-5 gx-5">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="checkInDateCount">
+                            <div class="checkin">
+                                <p class="label">Check In</p>
+                                <input type="text" class="datepicker form-control date" value="12/10/2024">
+                            </div>
+                            <div class="checkOut">
+                                <p class="label">Check Out</p>
+                                <input type="text" class="datepicker form-control date" value="12/10/2024">
+                            </div>
+                            <button class="btn btn-primary btn-sm">Check Availability</button>
+                        </div>
+                        <div class="roomWrapper room1 mb-4">
+                            <div class="roomPhotos">
+                                <div class="room-images-slider swiper">
+                                    <div class="swiper-wrapper align-items-center">
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.1.JPG">
+                                                <img src="./assets/images/DSC09330-HDR.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.2.JPG">
+                                                <img src="./assets/images/DSC09330-HDR.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1_bathroom.png">
+                                                <img src="./assets/images/DSC09330-HDR.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Deluxe Room</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="matchHeightContent my-4">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolor voluptatum repellendus. Odio id autem dolores modi qui expedita rerum, voluptatum quo, corporis, reiciendis soluta.</p>
+                                </div>
+                                <div class="d-sm-flex align-items-center justify-content-between mb-5">
+                                    <!-- <label class="customToggle">
+                                      <input type="checkbox"/>
+                                      <div class="checkbox__checkmark"></div>
+                                      <div class="checkbox__body">Include Breakfast</div>
+                                    </label> -->
+                                    <div>
+                                        <label class="mb-3 fw-bold">Number of rooms</label>
+                                        <div class="count" id="deluxCount">
+                                            <button class="button-count">-</button>
+                                            <input type="text" readonly class="number-room" value="1">
+                                            <button class="button-count">+</button>
+                                        </div>
+                                        <p class="roomsRemaining">Only 6 rooms are remaining</p>
+                                    </div>
+                                    <div class="roomPrice mt-4 mt-sm-0">
+                                        <div class="discount"><span class="me-2">₹</span>5000</div>
+                                        <span>
+                                            <span><span class="me-2">₹</span>4500 </span>
+                                            <span class="off">10% off</span>
+                                        </span>
+                                        <small>+ Taxes</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-sm-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0)">cancellation/Refund policy</a>
+                                    <button class="btn btn-primary addRoom" data-room="delux">Add Rooms <i class="fas fa-arrow-right ms-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roomWrapper room1 mb-4">
+                            <div class="roomPhotos">
+                                <div class="room-images-slider swiper">
+                                    <div class="swiper-wrapper align-items-center">
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.1.JPG">
+                                                <img src="./assets/images/DSC09665-HDR.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.2.JPG">
+                                                <img src="./assets/images/DSC09665-HDR.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1_bathroom.png">
+                                                <img src="./assets/images/DSC09665-HDR.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Suite Room</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="data">
+                                            WIFI
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            TV
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="matchHeightContent my-4">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolor voluptatum repellendus. Odio id autem dolores modi qui expedita rerum, voluptatum quo, corporis, reiciendis soluta.</p>
+                                </div>
+                                <div class="d-sm-flex align-items-center justify-content-between mb-5">
+                                    <!-- <label class="customToggle">
+                                      <input type="checkbox"/>
+                                      <div class="checkbox__checkmark"></div>
+                                      <div class="checkbox__body">Include Breakfast</div>
+                                    </label> -->
+                                    <div>
+                                        <label class="mb-3 fw-bold">Number of rooms</label>
+                                        <div class="count" id="suitCount">
+                                            <button class="button-count">-</button>
+                                            <input type="text" readonly class="number-room" value="1">
+                                            <button class="button-count">+</button>
+                                        </div>
+                                        <p class="roomsRemaining">Only 6 rooms are remaining</p>
+                                    </div>
+                                    <div class="roomPrice mt-4 mt-sm-0">
+                                        <div class="discount"><span class="me-2">₹</span>5000</div>
+                                        <span>
+                                            <span><span class="me-2">₹</span>4500 </span>
+                                            <span class="off">10% off</span>
+                                        </span>
+                                        <small>+ Taxes</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-sm-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0)">cancellation/Refund policy</a>
+                                    <button class="btn btn-primary addRoom" data-room="suit">Add Rooms <i class="fas fa-arrow-right ms-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="roomWrapper room1 mb-4">
+                            <div class="roomPhotos">
+                                <div class="room-images-slider swiper">
+                                    <div class="swiper-wrapper align-items-center">
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.1.JPG">
+                                                <img src="./assets/images/sonnie-hiles-DhFHtkECn7Q-unsplash.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1.2.JPG">
+                                                <img src="./assets/images/sonnie-hiles-DhFHtkECn7Q-unsplash.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <div class="spotlight" data-title="This is a title" data-description="This is a description for image" data-src="./assets/images/room1_bathroom.png">
+                                                <img src="./assets/images/sonnie-hiles-DhFHtkECn7Q-unsplash.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Deluxe Room</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="data">
+                                            2 Guests
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-tv"></i>
+                                        </div>
+                                        <div class="data">
+                                            Smart TV
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-trash"></i>
+                                        </div>
+                                        <div class="data">
+                                            Trash Can
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon">
+                                            <i class="fas fa-bath"></i>
+                                        </div>
+                                        <div class="data">
+                                            Private Bathroom
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="matchHeightContent my-4">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolor voluptatum repellendus. Odio id autem dolores modi qui expedita rerum, voluptatum quo, corporis, reiciendis soluta.</p>
+                                </div>
+                                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                    <label class="customToggle">
+                                      <input type="checkbox"/>
+                                      <div class="checkbox__checkmark"></div>
+                                      <div class="checkbox__body">Include Breakfast</div>
+                                    </label>
+                                    <p class="roomPrice mt-4 mt-sm-0"><span class="me-2">₹</span>3000 <span class="off">50% off</span></p>
+                                </div>
+                                <a href="booking.html" class="btn noStyle">Add Room <i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="checkoutBox" style="display: none;">
+                            <h2 class="sub-title-2 mt-0">Checkout</h2>
+                            <div class="addedRooms">
+                                <div class="room mb-3 hidden" id="deluxRoom">
+                                    <button class="btn noStyle removeRoom"><i class="fas fa-xmark"></i></button>
+                                    <div class="">
+                                        <h3 class="roomName mb-3">Delux Room</h3>
+                                        <p class="mb-2 flexSm"><span class="fw-bold">Number of Rooms: </span><span class="roomCount" id="checkoutRoomCount">2</span></p>
+                                        <p class="flexSm"><span><span class="fw-bold">Price: </span> <span id="checkoutRoomCalc">2 * 4500</span> =</span><span class="roomPrice mt-4 mt-sm-0" id="checkoutRoomTotalPrice"><span class="me-2">₹</span>9000</span></p>
+                                    </div>
+                                </div>
+                                <div class="room hidden" id="suitRoom">
+                                    <button class="btn noStyle removeRoom"><i class="fas fa-xmark"></i></button>
+                                    <div class="">
+                                        <h3 class="roomName mb-3">Suite Room</h3>
+                                        <p class="mb-2 flexSm"><span class="fw-bold">Number of Rooms: </span><span class="roomCount" id="checkoutRoomCount">2</span></p>
+                                        <p class="flexSm"><span><span class="fw-bold">Price: </span> <span id="checkoutRoomCalc">2 * 4500</span> =</span><span class="roomPrice mt-4 mt-sm-0" id="checkoutRoomTotalPrice"><span class="me-2">₹</span>9000</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="totalBox">
+                                <div class="priceItem">
+                                    <p>Room Price</p>
+                                    <p><span class="me-2">₹</span>16500</p>
+                                </div>
+                                <div class="priceItem">
+                                    <p>Tax</p>
+                                    <p><span class="me-2">₹</span>400</p>
+                                </div>
+                                <div class="priceItem">
+                                    <p>Total Price</p>
+                                    <p><span class="me-2">₹</span>16500</p>
+                                </div>
+                                <div class="priceItem discount">
+                                    <p>Discount</p>
+                                    <p><span class="me-2">₹</span>1650</p>
+                                </div>
+                                <div class="priceItem grandTotal">
+                                    <p>Grand Total</p>
+                                    <p><span class="me-2">₹</span><span id="grandTotal">14850</span></p>
+                                </div>
+                            </div>
+                            <a href="checkout.html" class="btn btn-primary mt-5 w-100">Checkout</a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </main>
+    <footer data-include="footer"></footer>
+   </div>
+
+
+   <script src="./assets/js/jquery.js"></script>
+   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+   <script src="./assets/js/plugins.js"></script>
+   <script src="./assets/js/app.js"></script>
+</body>
+</html>
