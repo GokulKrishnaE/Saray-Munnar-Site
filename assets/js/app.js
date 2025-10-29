@@ -400,6 +400,38 @@ new Swiper(".roomPhotosSwiper", {
       prevEl: ".roomPhotoSliderPrev",
     },
   });
+new Swiper(".roomsPhotosSlider101", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
+new Swiper(".roomsPhotosSlider102", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
+new Swiper(".roomsPhotosSlider103", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
+new Swiper(".roomsPhotosSlider104", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
 
   document.querySelectorAll('.fadeImageWrap').forEach(el => {
   const color = el.dataset.fadeColor || '#000';
