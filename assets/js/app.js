@@ -407,6 +407,10 @@ new Swiper(".roomsPhotosSlider101", {
       delay: 5000,
       disableOnInteraction: false
     },
+    navigation: {
+      nextEl: ".roomsPhotosSlider101Next",
+      prevEl: ".roomsPhotosSlider101Prev",
+    },
   });
 new Swiper(".roomsPhotosSlider102", {
     speed: 400,
@@ -414,6 +418,10 @@ new Swiper(".roomsPhotosSlider102", {
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
+    },
+    navigation: {
+      nextEl: ".roomsPhotosSlider102Next",
+      prevEl: ".roomsPhotosSlider102Prev",
     },
   });
 new Swiper(".roomsPhotosSlider103", {
@@ -423,6 +431,10 @@ new Swiper(".roomsPhotosSlider103", {
       delay: 5000,
       disableOnInteraction: false
     },
+    navigation: {
+      nextEl: ".roomsPhotosSlider103Next",
+      prevEl: ".roomsPhotosSlider103Prev",
+    },
   });
 new Swiper(".roomsPhotosSlider104", {
     speed: 400,
@@ -430,6 +442,10 @@ new Swiper(".roomsPhotosSlider104", {
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
+    },
+    navigation: {
+      nextEl: ".roomsPhotosSlider104Next",
+      prevEl: ".roomsPhotosSlider104Prev",
     },
   });
 
